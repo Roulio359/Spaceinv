@@ -1,17 +1,24 @@
+
+
 from pygame import Vector2
 
 
-class alien:
+class Alien:
     def __init__(self):
-        self.model1 = pygame.image.load('Model\big.gif')
-        self.model2 = pygame.image.load('Model\med.gif')
-        self.model3 = pygame.image.load('Model\sma.gif')
-        self.vitesse = 30
+
+        self.vitesse = 0
         self.position = Vector2()
 
-    def afficher(self):
-        pass
 
+    def afficher(self, screen, model1, model2, model3, xalien):
+
+        for i in range(11):
+            screen.blit(model1, (xalien, 50))
+            screen.blit(model2, (xalien, 100))
+            screen.blit(model2, (xalien, 150))
+            screen.blit(model3, (xalien, 200))
+            screen.blit(model3, (xalien, 250))
+            xalien = xalien + 40
     def deplacer(self):
         pass
 
