@@ -5,7 +5,7 @@ class Rocket:
     def __init__(self):
         #self.model = pygame.image.load('.png')
         self.vitesse = 6
-        self.position = Vector2(200,450)
+        self.position = Vector2(500,450)
 
     def afficher(self,screen, alien):
         if self.position.y != 0:

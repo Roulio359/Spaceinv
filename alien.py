@@ -19,6 +19,8 @@ class Alien:
             screen.blit(model3, (xalien, 200))
             screen.blit(model3, (xalien, 250))
             xalien = xalien + 40
+    def checkCollision(self, game):
+
     def deplacer(self):
         pass
 
